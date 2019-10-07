@@ -16,7 +16,7 @@ Jul 2019
 
 Solving food wastage with advanced analytics.
 
-Mockup dashboard with Python + Javascript
+Mockup dashboard with Python + Javascript/HTML
 
 ## Python 3.7
 ## Install libraries and run app.py.
