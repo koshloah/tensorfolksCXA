@@ -1,0 +1,165 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://localhost:8060">
+            <div>
+                <img src="assets/home.svg" style="height:20px;width:18px;position:relative;top:-2;">    
+                Munch Manager
+            </div>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
+    </div>
+</nav>
+
+<br><br>
+<div class="panel panel-heading panel-default">
+    <div id="lane1" class="lane panel"></div>
+    <div id="lane2" class="lane panel"></div>
+</div>
+
+<button class="btn btn-default" onclick="window.location='http://localhost:8060/evaluation'">
+    Food feedback
+</button>
+
+<script>
+
+lane1 = document.getElementById("lane1")
+lane2 = document.getElementById("lane2")
+
+var params1 = [
+    {num:1, upvotes:880, downvotes:120, desc:"Bak Kut Teh"},
+    {num:2, upvotes:666, downvotes:334, desc: "Nasi Lemak"},
+    {num:3, upvotes:789, downvotes:211, desc: "Mee Siam"},
+    {num:4, upvotes:999, downvotes:1, desc: "Chicken Rice"}
+]
+
+var params2 = [
+    {num:5, upvotes:1, downvotes:999, desc:"Malay Cai Fan"},
+    {num:6, upvotes:2, downvotes:998, desc: "Western Fried Rice"},
+    {num:7, upvotes:355, downvotes:645, desc:"Cai Fan"},
+    {num:8, upvotes:25, downvotes:975, desc:"Mee Goreng"}
+]
+
+addCardToLane(lane1,params1)
+addCardToLane(lane2,params2)
+
+function addCardToLane(lane,list) {
+    card_num = 1
+    list.forEach(function(obj){
+        card = document.createElement("card")
+        card.style.height = "100%"
+        card.style.width = "15%"
+        card.className = `card card${card_num} panel panel-default`
+        card_num += 1
+
+        panel_heading = document.createElement("div")
+        panel_heading.className = "panel-heading"
+
+        panel_title = document.createElement("h1")
+        panel_title.className = "panel-title"
+        panel_title.innerHTML = obj.desc
+
+        panel_heading.appendChild(panel_title)
+        card.appendChild(panel_heading)
+        
+        panel_body_1 = document.createElement("div")
+        panel_body_1.className = "panel-body"
+        panel_body_1.style.height = "65%"
+        panel_body_1.style.width = "100%"
+
+        img = document.createElement("img")
+        img.style.height = "100%"
+        img.style.width = "100%"
+        img.src = `assets/images/food${obj.num}.jpg`
+        
+        panel_body_1.appendChild(img)
+        card.appendChild(panel_body_1)
+
+        var panel_body_2 = document.createElement("div")
+        panel_body_2.className = "panel-body bottom-panel"
+
+        table = document.createElement("table")
+        table.className = "table table-default table-striped"
+
+        tr = table.insertRow()
+        cell = tr.insertCell()
+        cell.innerHTML = "Total no. of votes"
+        cell = tr.insertCell()
+        cell.innerHTML = obj.upvotes+obj.downvotes
+
+        tr = table.insertRow()
+        cell = tr.insertCell()
+        cell.innerHTML = "% of upvotes"
+        cell = tr.insertCell()
+        var perc = 100*obj.upvotes / (obj.upvotes+obj.downvotes)
+        cell.innerHTML = `${perc}%`
+        cell.style.color = "red"
+        if (perc > 50.0) cell.style.color = "green"
+
+        panel_body_2.appendChild(table)
+        // panel_body_2.innerHTML = `Total votes: ${obj.upvotes+obj.downvotes} Percentage upvotes: ${100*obj.upvotes / (obj.upvotes+obj.downvotes)}%`
+        
+        card.appendChild(panel_body_2)
+        lane.appendChild(card)
+    })
+}
+
+
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<style>
+
+.lane {
+    position:relative;
+    height: 400px;
+}
+
+.card {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+}
+
+.card1 {
+    left:20%;
+}
+
+.card2 {
+    left:35%;
+}
+
+.card3 {
+    left: 50%
+}
+
+.card4 {
+    left: 65%
+}
+
+.bottom-panel {
+    margin: auto;
+    width: 90%;
+    font-size:15px;
+}
+
+</style>

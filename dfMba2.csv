@@ -1,0 +1,5 @@
+LHS,RHS,Support,Confidence,Lift,Count
+{Chicken Nugget},"{Steamed egg, Minced Meat}",0.0012321,1,375.92,55816
+{Spaghetti},"{Meatballs, Bread Bun}",0.0023,0.98,284.45,5123
+{Chicken Drumstick},"{Crabstick, Fried Rice}",0.05123,0.82,156,1235
+{Xiao Bai Cai},{Dumplings},0.005456,0.8,3.66,8256

@@ -1,0 +1,5 @@
+LHS,RHS,Support,Confidence,Lift,Count
+{Rice},{Tao Gei},0.0012321,1,375.92,14568
+{Beans},"{Yoghurt, Cream of Chicken}",0.0023,0.92,325,562
+{Ham},"{Chicken drumsticks, Peas, Carrots}",0.05123,0.9,105,54546
+{Rice},"{Steamed Egg, Tofu}",0.05456,0.8,2.66,7468

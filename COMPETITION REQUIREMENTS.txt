@@ -1,0 +1,57 @@
+1) clean water n sanitation
+	- imporve water use efficiently n sustainable
+	- participation of communities in improving water bn sanitation managenent
+	
+	ADD: ability to monitor water /sanitation efficiency and management
+		
+	- doesnt have to be singapore context (anywhere)	
+
+2) affordable n clean energy
+
+	- improve energy consuption n production
+	
+	ADD: demonstrate improvement in energy consumption/ production
+
+3) industry innovation n infrastriucture
+	- fintech special payment
+	- improve access of SME's access to financial services
+
+	ADD: support multi-currencies in app, or monitor flow of good sin logistics
+
+4) sustainable cities n communities
+	- safe affordable accessible sustainable transport systems
+
+	ADD: location based info required
+
+5) food waste (THIS LAILAILAILAI)
+	
+	- significantly reduce food waste at retail n consumer level, reduce food losses along production n supply chain
+	
+	- encourage reducing, reusing, recylging tru tech
+
+	*****************************************************************************************
+	ADD: indication of proximity to location of food wastage ********************************
+	*****************************************************************************************	
+        - show where got food wastage
+
+	ADD: include gamification / reward system to encourage reducing, reusing, recycling
+
+
+2 ROUNDS OF JUDGING
+    first round: 13 july
+    second round: shortlisted teams --> final round of judging on 16 july morning
+        - not eveyrone needs to make it (at least one)
+
+    FINAL PRIZE PRESENTATION
+        - 30 july 2019
+
+JUDGING CRITERIA
+    30 challenge
+    20 originality
+    20 value, usability 
+    30 technical features
+
+
+
+
+
