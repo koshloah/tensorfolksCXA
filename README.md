@@ -4,11 +4,13 @@ IMDA Code::XtremeApps:: (CXA) Hackathon Singapore 2019
 Event Website:
 https://www2.imda.gov.sg/news-and-events/events-listing/Code-XtremeApps-2019|
 
-Placing: Finalist
+Placing: Finalist in Open Category
 
-Authors
+Authors:
 @LZL96 Liu Zuo Lin 
+
 @koshloah Josh Lim
+
 Jul 2019
 
 Solving food wastage with advanced analytics.
